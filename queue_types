@@ -1,0 +1,50 @@
+# Queue with list
+
+my_queue_list = []
+my_queue_list.append(1)
+my_queue_list.append(1)
+my_queue_list.append(3)
+my_queue_list.append(4)
+
+
+print(f'my queue = {my_queue_list}')
+
+# remove the first lelement in the queue
+print(my_queue_list.pop(0))
+
+print(f'my queue = {my_queue_list}')
+
+##################################################################33333
+# queue with deque
+
+from collections import deque
+
+# Initializing a queue
+my_queue_deq = deque()
+
+# Adding elements to a queue to the right
+my_queue_deq.append('a')
+my_queue_deq.append('b')
+my_queue_deq.append('c')
+
+
+# using appendleft() to insert element at left end
+# inserts 6 at the beginning of deque
+my_queue_deq.appendleft('z')
+
+
+print("Initial queue")
+print(my_queue_deq)
+
+# Removing elements from a queue
+print("\nremoving the leftmost in queue")
+print(my_queue_deq.popleft())
+print(my_queue_deq)
+
+
+print("\nremoving the rightmost in queue")
+print(my_queue_deq.pop())
+print(f'queue now {my_queue_deq}')
+
+print("\nQueue after removing elements")
+print(my_queue_deq)
